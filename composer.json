@@ -1,13 +1,15 @@
 {
-    "name": "languara/fuelphp-plugin",
-    "keywords": ["Languara", "FuelPHP"],
+    "name": "languara/fuelphp",
+    "keywords": ["Languara", "FuelPHP", "Translation", "Internationalization"],
     "homepage": "http://languara.com",
     "description": "Languara integration plugin for FuelPHP 1.x. Easily synchronize your content with Languara.",
     "type" : "fuel-package",
+    "target-dir": "languara",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Aleksandar Tufekciev",
-            "email": "aleksandar@languara.com"
+            "name": "Languara Development Team",
+            "email": "support@languara.com"
         }
     ],
     "require": {
