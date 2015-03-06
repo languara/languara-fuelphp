@@ -8,7 +8,7 @@ class Languara
 {
     public function run()
     {
-        $languara = new \Languara();
+        $languara = new LanguaraWrapper();
         
         \Cli::write($languara->get_message_text('notice_available_commands'));
         \Cli::write($languara->get_message_text('notice_push_command_info'));
