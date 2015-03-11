@@ -2,12 +2,13 @@
 
 namespace Fuel\Tasks;
 
+use \Languara\Wrapper\Languara as LanguaraWrapper;
+
 class Languara
 {
     public function run()
     {
-        \Fuel\Core\Package::load('languara');
-        $languara = new \Languara();
+        $languara = new LanguaraWrapper();
         
         \Cli::write($languara->get_message_text('notice_available_commands'));
         \Cli::write($languara->get_message_text('notice_push_command_info'));
@@ -17,9 +18,7 @@ class Languara
     
     public static function push()
     {
-        
-        \Fuel\Core\Package::load('languara');
-        $languara = new \Languara();
+        $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
@@ -48,9 +47,7 @@ class Languara
     
     public static function pull()
     {
-        
-        \Fuel\Core\Package::load('languara');
-        $languara = new \Languara();
+        $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
@@ -79,8 +76,7 @@ class Languara
     
     public static function register()
     {
-        \Fuel\Core\Package::load('languara');
-        $languara = new \Languara();
+        $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
@@ -107,8 +103,7 @@ class Languara
     
     public static function translate()
     {
-        \Fuel\Core\Package::load('languara');
-        $languara = new \Languara();
+        $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
