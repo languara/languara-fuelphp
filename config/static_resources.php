@@ -68,9 +68,10 @@ return array(
     'success_download_successful' => 'Download successful!',
     'success_registration_completed' => 'Registration completed successfully!',
     'success_content_translated_successfully' => 'Your content was translated successfully!',
+    'success_translate_completed' => 'Translation process finished successfully!',
     
     // prompt messages
-    'prompt_proceed_with_upload' => 'Do you want to proceed with uploading of the content [yes/no]?',
+    'prompt_proceed_with_upload' => 'Do you want to proceed with uploading of the content [yes/no]? ',
     'prompt_enter_first_name' => 'Enter you first name: ',
     'prompt_first_name_validation' => 'First name should be only letters and white spaces!',
     'prompt_enter_last_name' => 'Enter you last name: ',
@@ -78,7 +79,9 @@ return array(
     'prompt_enter_email' => 'Enter you email: ',
     'prompt_email_validation' => 'Enter a valid email!',
     'prompt_create_language_dir' => 'Do you want me to create the language folder for you',
-    'prompt_push_content' => 'Do you want to upload your content first [yes/no]?',
-    'prompt_pull_content' => 'Do you want to download your content from the server [yes/no]?',
+    'prompt_push_content' => 'Do you want to upload your content first [yes/no]? ',
+    'prompt_pull_content' => 'Do you want to download your content from the server [yes/no]? ',
+    'prompt_continue_translating' => 'Do you want to proceed translating with the current costs [yes/no]? ',
+    'prompt_register_before_continue' => 'You need to register before continuing [yes/no]? ',
 )
 );
