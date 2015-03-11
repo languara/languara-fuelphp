@@ -2,12 +2,11 @@
 
 namespace Fuel\Tasks;
 
-use \Languara\Wrapper\Languara as LanguaraWrapper;
-
 class Languara
 {
     public function run()
     {
+        \Fuel\Core\Package::load('languara');
         $languara = new \Languara();
         
         \Cli::write($languara->get_message_text('notice_available_commands'));
@@ -18,7 +17,9 @@ class Languara
     
     public static function push()
     {
-        $languara = new LanguaraWrapper();
+        
+        \Fuel\Core\Package::load('languara');
+        $languara = new \Languara();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
@@ -47,7 +48,9 @@ class Languara
     
     public static function pull()
     {
-        $languara = new LanguaraWrapper();
+        
+        \Fuel\Core\Package::load('languara');
+        $languara = new \Languara();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
@@ -76,7 +79,8 @@ class Languara
     
     public static function register()
     {
-        $languara = new LanguaraWrapper();
+        \Fuel\Core\Package::load('languara');
+        $languara = new \Languara();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
@@ -103,13 +107,14 @@ class Languara
     
     public static function translate()
     {
-        $languara = new LanguaraWrapper();
+        \Fuel\Core\Package::load('languara');
+        $languara = new \Languara();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
         while (@ob_end_flush());
         
-        ($languara->print_message('test_translate', 'SUCCESS'));
+        ($languara->print_message('notice_start_translate', 'SUCCESS'));
         echo PHP_EOL . PHP_EOL;
         
         try
