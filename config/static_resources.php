@@ -37,6 +37,7 @@ return array(
     'error_languara_servers_respond' => 'Languara\'s servers responded with an error:',
     'error_curl_not_enabled' => 'ERROR: CURL is not enabled for translation service, please enable curl and try again!',
     'error_storage_engine' => 'ERROR: Storage engine is not supported!',
+    'error_no_local_content' => 'ERROR: Looks like you don\'t have any language resources defined in ',
     
     // notice messages
     'notice_retrieve_data' => 'Retrieving local data!',
@@ -62,6 +63,7 @@ return array(
     'notice_starting_download' => 'Starting download process!',
     'notice_register_command' => 'Completing the following process will register you for an account on http://languara.com!',
     'notice_start_translate' => 'Starting the translation process:',
+    'notice_no_account_associated' => 'You need to have a user registered on http://languara.com before you can continue!',
     
     // success messages
     'success_upload_successful' => 'Upload successful!',
