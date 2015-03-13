@@ -38,6 +38,7 @@ return array(
     'error_curl_not_enabled' => 'ERROR: CURL is not enabled for translation service, please enable curl and try again!',
     'error_storage_engine' => 'ERROR: Storage engine is not supported!',
     'error_no_local_content' => 'ERROR: Looks like you don\'t have any language resources defined in ',
+    'error_add_more_languages' => 'ERROR: You need to add or upload more then your primary language in Languara before you can translate, or the uploaded languages to the server are not supported by the current translation method!',
     
     // notice messages
     'notice_retrieve_data' => 'Looking for local data.',
