@@ -76,6 +76,8 @@ return array(
     'prompt_proceed_with_upload' => 'Do you want to push your content [yes/no]? ',
     'prompt_enter_first_name' => 'Enter you First Name: ',
     'prompt_first_name_validation' => 'First name should be only letters and white spaces!',
+    'prompt_enter_password' => 'Enter you password: ',
+    'prompt_password_validation' => 'Password can be any letter, number or special char and it must be between 6 and 15 characters!',
     'prompt_enter_last_name' => 'Enter you Last Name: ',
     'prompt_last_name_validation' => 'Last name should be only letters and white spaces!',
     'prompt_enter_email' => 'Enter you Email Address: ',
