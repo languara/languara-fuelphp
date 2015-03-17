@@ -1,8 +1,8 @@
 {
     "name": "languara/fuelphp",
-    "keywords": ["Languara", "FuelPHP", "Translation", "Internationalization"],
-    "homepage": "http://languara.com",
-    "description": "Languara integration plugin for FuelPHP 1.x. Easily synchronize your content with Languara.",
+    "keywords": ["Languara", "FuelPHP", "Translation", "Localization", "Localize", "Internationalization", "Internationalize", "Translate", "l10n", "i18n"],
+    "homepage": "https://languara.com/localization/fuelphp",
+    "description": "Languara localization plugin for FuelPHP 1.x. Easily upload, translate, and synchronize your language content using Languara's Cloud Based Translation Management Platform.",
     "type" : "fuel-package",
     "license": "MIT",
     "authors": [
