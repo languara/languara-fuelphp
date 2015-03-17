@@ -21,7 +21,7 @@ return array(
 ),
 "origin_site"  => "https://languara.com/",
 "platform" => "FuelPHP",
-array(
+"messages" => array(
     // error messages
     'error_language_location' => 'ERROR: Language location is not set correctly, check the config file or download a new config file from Languara and replace the old one!',
     'error_language_dir_missing' => 'ERROR: Language directory not found, check the location of the language directory in the config file and try again!',
