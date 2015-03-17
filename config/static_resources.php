@@ -1,5 +1,5 @@
 <?php
-// Languara CodeIgniter Plugin Configuration
+// Languara FuelPHP Plugin Configuration
 // For more information visit http://languara.com
 // (c) 2015 - Languara.  All rights reserved.
 //
