@@ -21,7 +21,7 @@ return array(
 ),
 "origin_site"  => "https://languara.com/",
 "platform" => "FuelPHP",
-"messages" => array(
+array(
     // error messages
     'error_language_location' => 'ERROR: Language location is not set correctly, check the config file or download a new config file from Languara and replace the old one!',
     'error_language_dir_missing' => 'ERROR: Language directory not found, check the location of the language directory in the config file and try again!',
@@ -65,6 +65,14 @@ return array(
     'notice_register_command' => 'Create a new Languara account:  (Note: If you already have one, visit http://languara.com and setup an integration online)!',
     'notice_start_translate' => 'Starting the translation process:',    
     'notice_no_account_associated' => 'Looks like you don\'t have an account...',
+    
+    'notice_requested_translations' => 'Requested translation: ',
+    'notice_credits_remaining' => 'Credits remaining:     ',
+    'notice_no_charge' => 'There is no charge to complete this translation.',
+    'notice_current_rate' => 'Current rate for additional credits: ',
+    'notice_plans_and_pricing' => 'For plans and pricing visit: https://languara.com/service/plans_and_pricing',
+    'notice_account_charge' => 'Account will be charged: ',
+    'notice_credits_remain_after_transaction' => 'Credits remaining after transaction: ',
     
     // success messages
     'success_upload_successful' => 'Push complete!',
