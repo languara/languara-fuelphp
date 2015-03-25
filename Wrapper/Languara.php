@@ -1,7 +1,7 @@
 <?php
 namespace Languara\Wrapper;
 
-class Languara extends \Languara\Library\Lib_Languara
+class LanguaraWrapper extends \Languara\Library\Lib_Languara
 {
     public function __construct()
     {
@@ -25,5 +25,13 @@ class Languara extends \Languara\Library\Lib_Languara
             }
         }
         
+    }
+    
+    private function load_config_file()
+    {
+        \Config::load('languara', null, true, true);
+            
+        $this->language_location = APPPATH . \Config::get('language_location');
+        $this->conf = \Config::get('conf');
     }
 }
