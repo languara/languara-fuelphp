@@ -27,7 +27,7 @@ class LanguaraWrapper extends \Languara\Library\Lib_Languara
         
     }
     
-    private function load_config_file()
+    protected function load_config_file()
     {
         \Config::load('languara', null, true, true);
             
