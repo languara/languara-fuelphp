@@ -2,7 +2,7 @@
 
 namespace Fuel\Tasks;
 
-use \Languara\Wrapper\Languara as LanguaraWrapper;
+use Languara\Wrapper\LanguaraWrapper as LanguaraWrapper;
 
 class Languara
 {
