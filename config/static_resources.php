@@ -16,8 +16,8 @@ return array(
     "translate_project"     => "api/project/order_project_translation",
     ),
 "config_files" => array (
-  'project_config' => '/languara/config/languara.php',
-  'static_resources' => '/languara/config/static_resources.php',
+  'project_config' => '/config/languara.php',
+  'static_resources' => '/config/static_resources.php',
 ),
 "origin_site"  => "https://languara.com/",
 "platform" => "FuelPHP",

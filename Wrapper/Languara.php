@@ -21,7 +21,7 @@ class LanguaraWrapper extends \Languara\Library\Lib_Languara
         {
             foreach ($this->config_files as $config_key => $config_file)
             {
-                $this->config_files[$config_key] = PKGPATH . $config_file;
+                $this->config_files[$config_key] = PKGPATH .'languara'. $config_file;
             }
         }
         
