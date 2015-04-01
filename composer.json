@@ -5,7 +5,6 @@
     "description": "Languara localization plugin for FuelPHP 1.x. Easily upload, translate, and synchronize your language content using Languara's Cloud Based Translation Management Platform.",
     "type" : "fuel-package",
     "license": "MIT",
-    "type" : "library",
     "authors": [
         {
             "name": "Languara Development Team",
