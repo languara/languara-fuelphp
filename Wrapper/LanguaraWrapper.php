@@ -5,6 +5,7 @@ class LanguaraWrapper extends \Languara\Library\Lib_Languara
 {
     public function __construct()
     {
+        parent::__construct();
         \Config::load('languara');
         \Config::load('static_resources');
         

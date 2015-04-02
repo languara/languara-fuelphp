@@ -24,9 +24,7 @@ class Languara
         // in the command line, unless you use the frameworks methods for outputing
         while (@ob_end_flush());
         
-        echo PHP_EOL;
         $languara->print_message('notice_starting_upload', 'SUCCESS');
-        echo PHP_EOL;
         
         try
         {
@@ -34,9 +32,7 @@ class Languara
         } 
         catch (\Exception $ex) 
         {
-            echo PHP_EOL;
             ($languara->print_message($ex->getMessage(), 'FAILURE'));
-            echo PHP_EOL;
             return;
         }
         
