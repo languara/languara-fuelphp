@@ -35,7 +35,7 @@ return array(
         'error_retrieving_endpoint' => 'ERROR: Failed to retrieving endpoint. Check your local configuration and make sure the endpoints array is correctly defined or just download a new config file from the server. Endpoint: ',
         'error_general_request_error' => 'ERROR: There was a error processing your request, please try again. If that does not work contact the administrators for more information!',
         'error_config_file_help_info' => 'Make sure your local config file is configured correctly. If you are not sure how to do that generate a new plugin files on Languara and replace the ones you have on your server at the moment!',
-        'error_languara_servers_respond' => 'Languara\'s servers responded with an error:',
+        'error_languara_servers_respond' => 'Oops: ',
         'error_curl_not_enabled' => 'ERROR: CURL is not enabled for translation service, please enable curl and try again!',
         'error_storage_engine' => 'ERROR: Storage engine is not supported!',
         'error_no_local_content' => 'ERROR: Looks like you don\'t have any language resources defined in ',
