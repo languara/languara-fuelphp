@@ -41,9 +41,9 @@ return array(
         'error_no_local_content' => 'ERROR: Looks like you don\'t have any language resources defined in ',
         'error_add_more_languages' => 'ERROR: You need to add or upload more then your primary language in Languara before you can translate, or the uploaded languages to the server are not supported by the current translation method!',
         // notice messages
-        'notice_retrieve_data' => 'Scanning project for language files.',
-        'notice_resource_cd_help_link' => 'Go to this link and check how resource codes should be formed!',
-        'notice_pushing_content' => 'Pushing content to Languara.',
+        'notice_retrieve_data' => 'Scanning project for locales and translations.',
+        'notice_resource_cd_help_link' => 'See http://docs.languara.com for resource code format requirements!',
+        'notice_pushing_content' => 'Pushing language data to Languara.',
         'notice_retrieve_languages' => 'Retrieving supported languages',
         'notice_languages_downloaded' => 'Languages downloaded: ',
         'notice_resource_groups_downloaded' => 'Resource groups downloaded: ',
