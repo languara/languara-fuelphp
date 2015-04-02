@@ -1,5 +1,4 @@
 <?php
-ini_set('memory_limit', '-1');
 
 namespace Fuel\Tasks;
 
@@ -19,6 +18,7 @@ class Languara
     
     public static function push()
     {
+        ini_set('memory_limit', '-1');
         $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
@@ -42,6 +42,7 @@ class Languara
     
     public static function pull()
     {
+        ini_set('memory_limit', '-1');
         $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
@@ -65,6 +66,7 @@ class Languara
     
     public static function register()
     {
+        ini_set('memory_limit', '-1');
         $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
