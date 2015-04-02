@@ -77,7 +77,7 @@ return array(
         'success_download_successful' => 'Pull complete!',
         'success_registration_completed' => 'You are now registered!',
         'success_content_translated_successfully' => 'Content translated.',
-        'success_translate_completed' => 'Translation complete!',
+        'success_translate_completed' => 'Translation completed!',
         // prompt messages
         'prompt_proceed_with_upload' => 'Do you want to push your content [y/n]? ',
         'prompt_enter_first_name' => 'Enter you First Name: ',
