@@ -88,7 +88,7 @@ return array(
         'prompt_last_name_validation' => 'Last name should consist of letters!',
         'prompt_enter_email' => 'Enter you Email Address: ',
         'prompt_email_validation' => 'Enter a valid email addess!',
-        'prompt_create_language_dir' => 'Do you want to create the language folder? [y/n]',
+        'prompt_create_language_dir' => 'Do you want to create the language folder? [y/n] ',
         'prompt_push_content' => 'Push your content to Languara? [y/n] ',
         'prompt_pull_content' => 'Do you want to pull your content from Languara? [y/n] ',
         'prompt_continue_translating' => 'Do you want to continue? [y/n] ',
