@@ -16,7 +16,7 @@ class LanguaraWrapper extends \Languara\Library\Lib_Languara
         $this->origin_site = \Config::get('origin_site');
         $this->config_files = \Config::get('config_files');
         $this->platform = \Config::get('platform');
-        $this->driver = new \Languara\Driver\FuelDriver();
+        $this->driver = new \Languara\Driver\FuelResourceGroupDriver();
         
         // change config files to have absoluth paths
         if (is_array($this->config_files))
