@@ -18,6 +18,7 @@ class Languara
     
     public static function push()
     {
+        ini_set('memory_limit', '-1');
         $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
@@ -32,26 +33,23 @@ class Languara
         } 
         catch (\Exception $ex) 
         {
-            ($languara->print_message($ex->getMessage(), 'FAILURE'));
+            $languara->print_message($ex->getMessage(), 'FAILURE');
             return;
         }
         
-        echo PHP_EOL;
-        ($languara->print_message('success_upload_successful', 'SUCCESS'));
-        echo PHP_EOL . PHP_EOL;
+        $languara->print_message('success_upload_successful', 'SUCCESS');
     }
     
     public static function pull()
     {
+        ini_set('memory_limit', '-1');
         $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
         while (@ob_end_flush());
         
-        echo PHP_EOL;
-        ($languara->print_message('notice_starting_download', 'SUCCESS'));
-        echo PHP_EOL;
+        $languara->print_message('notice_starting_download', 'SUCCESS');
         
         try
         {
@@ -59,27 +57,23 @@ class Languara
         } 
         catch (\Exception $ex) 
         {
-            echo PHP_EOL;
-            ($languara->print_message($ex->getMessage(), 'FAILURE'));
-            echo PHP_EOL. PHP_EOL;
+            $languara->print_message($ex->getMessage(), 'FAILURE');
             return;
         }
         
-        echo PHP_EOL;
-        ($languara->print_message('success_download_successful', 'SUCCESS'));
-        echo PHP_EOL . PHP_EOL;
+        $languara->print_message('success_download_successful', 'SUCCESS');
     }
     
     public static function register()
     {
+        ini_set('memory_limit', '-1');
         $languara = new LanguaraWrapper();
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
         while (@ob_end_flush());
         
-        ($languara->print_message('notice_register_command', 'SUCCESS'));
-        echo PHP_EOL . PHP_EOL;
+        $languara->print_message('notice_register_command', 'SUCCESS');
         
         try
         {
@@ -87,14 +81,11 @@ class Languara
         } 
         catch (\Exception $ex) 
         {
-            ($languara->print_message($ex->getMessage(), 'FAILURE'));
-            echo PHP_EOL . PHP_EOL;
+            $languara->print_message($ex->getMessage(), 'FAILURE');
             return;
         }
         
-        echo PHP_EOL;
-        ($languara->print_message('success_registration_completed', 'SUCCESS'));
-        echo PHP_EOL . PHP_EOL;
+        $languara->print_message('success_registration_completed', 'SUCCESS');
     }
     
     public static function translate()
@@ -105,8 +96,7 @@ class Languara
         // in the command line, unless you use the frameworks methods for outputing
         while (@ob_end_flush());
         
-        ($languara->print_message('notice_start_translate', 'SUCCESS'));
-        echo PHP_EOL . PHP_EOL;
+        $languara->print_message('notice_start_translate', 'SUCCESS');
         
         try
         {
@@ -114,14 +104,11 @@ class Languara
         } 
         catch (\Exception $ex) 
         {
-            ($languara->print_message($ex->getMessage(), 'FAILURE'));
-            echo PHP_EOL . PHP_EOL;
+            $languara->print_message($ex->getMessage(), 'FAILURE');
             return;
         }
         
-        echo PHP_EOL;
-        ($languara->print_message('success_translate_completed', 'SUCCESS'));
-        echo PHP_EOL . PHP_EOL;
+        $languara->print_message('success_translate_completed', 'SUCCESS');
     }
 }
 
