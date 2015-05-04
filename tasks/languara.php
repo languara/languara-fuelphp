@@ -88,9 +88,14 @@ class Languara
         $languara->print_message('success_registration_completed', 'SUCCESS');
     }
     
-    public static function translate()
+    public static function translate($translate_method = 'machine')
     {
         $languara = new LanguaraWrapper();
+        
+        if ($translate_method !== 'machine' && $translate_method !== 'human')
+        {
+            return $languara->print_message('error_invalid_translation_method', 'FAILURE');
+        }
         
         // this is a hack, because FuelPHP buffers all response before printing
         // in the command line, unless you use the frameworks methods for outputing
@@ -100,7 +105,7 @@ class Languara
         
         try
         {
-            $languara->translate();          
+            $languara->translate($translate_method);          
         } 
         catch (\Exception $ex) 
         {

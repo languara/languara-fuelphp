@@ -40,6 +40,7 @@ return array(
         'error_storage_engine' => 'ERROR: Storage engine is not supported!',
         'error_no_local_content' => 'ERROR: Looks like you don\'t have any language resources defined in ',
         'error_add_more_languages' => 'ERROR: You need to add or upload more then your primary language in Languara before you can translate, or the uploaded languages to the server are not supported by the current translation method!',
+        'error_invalid_translation_method' => 'ERROR: Invalid tranlsation method!',
         // notice messages
         'notice_retrieve_data' => 'Scanning project for locales and translations.',
         'notice_resource_cd_help_link' => 'See http://docs.languara.com for resource code format requirements!',
