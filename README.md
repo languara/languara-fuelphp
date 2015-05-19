@@ -47,10 +47,10 @@ $ php oil r languara
 Or you can check the commands and their usage here:
 
 <pre><code>
-$ php oil r languara:translate
+$ php oil r languara:translate [options]
 </code></pre>
 
-to translate the texts you already have in your lang directory.
+to translate the texts you already have in your lang directory. You can also select the type of translation you want to perform, Machine or Human. It's set to machine by default.
 
 <pre><code>
 $ php oil r languara:pull
