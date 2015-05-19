@@ -24,7 +24,7 @@ Add the package to the autoload array in fuel/app/config/config.php:
 <pre><code>
 'always_load'  => array(
     'packages'  => array(
-    //
+      // .....
       'languara'
     )
 )
