@@ -22,9 +22,11 @@ $ composer update
 Add the package to the autoload array in fuel/app/config/config.php:
 
 <pre><code>
-'providers' => array(
-    // ...
-    'Languara\Plugin\PluginServiceProvider'
+'always_load'  => array(
+    'packages'  => array(
+    //
+      'languara'
+    )
 )
 </pre></code>
 
