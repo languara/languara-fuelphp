@@ -11,9 +11,10 @@ class Languara
         $languara = new LanguaraWrapper();
         
         \Cli::write($languara->get_message_text('notice_available_commands'));
-        \Cli::write($languara->get_message_text('notice_push_command_info'));
-        \Cli::write($languara->get_message_text('notice_pull_command_info'));
-        \Cli::write($languara->get_message_text('notice_register_command_info'));
+        \Cli::write('   '. $languara->get_message_text('notice_fuel_push_command') .'           '. $languara->get_message_text('notice_push_command_info'));
+        \Cli::write('   '. $languara->get_message_text('notice_fuel_pull_command') .'           '. $languara->get_message_text('notice_pull_command_info'));
+        \Cli::write('   '. $languara->get_message_text('notice_fuel_register_command') .'       '. $languara->get_message_text('notice_register_command_info'));
+        \Cli::write('   '. $languara->get_message_text('notice_fuel_translate_command') .'      '. $languara->get_message_text('notice_translate_command_info'));
     }
     
     public static function push()
