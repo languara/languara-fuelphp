@@ -22,9 +22,11 @@ $ composer update
 Add the package to the autoload array in fuel/app/config/config.php:
 
 <pre><code>
-'providers' => array(
-    // ...
-    'Languara\Plugin\PluginServiceProvider'
+'always_load'  => array(
+    'packages'  => array(
+      // .....
+      'languara'
+    )
 )
 </pre></code>
 
@@ -45,10 +47,10 @@ $ php oil r languara
 Or you can check the commands and their usage here:
 
 <pre><code>
-$ php oil r languara:translate
+$ php oil r languara:translate [options]
 </code></pre>
 
-to translate the texts you already have in your lang directory.
+to translate the texts you already have in your lang directory. You can also select the type of translation you want to perform, Machine or Human. It's set to machine by default.
 
 <pre><code>
 $ php oil r languara:pull
