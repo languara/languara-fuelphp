@@ -6,6 +6,12 @@ Languara Plugin for FuelPHP
 Add languara plugin information to your composer.json file:
 
 <pre><code>
+php composer.phar require languara/fuelphp
+</pre></code>
+
+or 
+
+<pre><code>
 "require": {
   "languara/fuelphp": "1.0.*@dev"
 }
