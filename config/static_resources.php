@@ -15,12 +15,13 @@ return array(
         "register" => "api/user/register.json",
         "get_translation_quote" => "api/project/get_project_translation_price",
         "translate_project" => "api/project/order_project_translation",
+        "connect_plugin" => "api/project/connect_plugin",
     ),
     "config_files" => array(
         'project_config' => '/config/languara.php',
         'static_resources' => '/config/static_resources.php',
     ),
-    "origin_site" => "https://languara.com/",
+    "origin_site" => "https://languara.dev/",
     "platform" => "FuelPHP",
     "messages" => array(
         // error messages
@@ -41,6 +42,7 @@ return array(
         'error_no_local_content' => 'ERROR: Looks like you don\'t have any language resources defined in ',
         'error_add_more_languages' => 'ERROR: You need to add or upload more then your primary language in Languara before you can translate, or the uploaded languages to the server are not supported by the current translation method!',
         'error_invalid_translation_method' => 'ERROR: Invalid tranlsation method!',
+        'error_invalid_public_key' => 'You need to enter a public key for you project in order to procceed!',
         // notice messages
         'notice_retrieve_data' => 'Scanning project for locales and translations.',
         'notice_resource_cd_help_link' => 'See http://docs.languara.com for resource code format requirements!',
@@ -62,10 +64,12 @@ return array(
         'notice_fuel_pull_command' => 'php oil refine languara:pull',
         'notice_fuel_register_command' => 'php oil refine languara:register',
         'notice_fuel_translate_command' => 'php oil refine languara:translate',
+        'notice_fuel_connect_command' => 'php oil refine languara:connect',
         'notice_push_command_info' => 'This command is used for uploading content to Languara',
         'notice_pull_command_info' => 'This command is used for downloading content from Languara',
         'notice_register_command_info' => 'Register for a new Languara account',
         'notice_translate_command_info' => 'Translate your content on Languara, you can choose either human or machine translation',
+        'notice_connect_command_info' => 'Connect your plugin with your project through the CLI by just providing the public key for you project.',
         'notice_starting_upload' => 'Pushing local language files to Languara',
         'notice_starting_download' => 'Pulling translations from Languara',
         'notice_register_command' => 'Create a new Languara account:  (Note: If you already have one, visit http://languara.com and setup an integration online)!',
@@ -78,12 +82,14 @@ return array(
         'notice_plans_and_pricing' => 'For plans and pricing visit: https://languara.com/service/plans_and_pricing',
         'notice_account_charge' => 'Account will be charged: ',
         'notice_credits_remain_after_transaction' => 'Credits remaining after transaction: ',
+        'notice_start_connect' => 'Connecting your plugin to your project, please be patient.',
         // success messages
         'success_upload_successful' => 'Push complete!',
         'success_download_successful' => 'Pull complete!',
-        'success_registration_completed' => 'You are now registered!',
+        'success_registration_completed' => 'You are now registered, you can visit your account at https://languara.com',
         'success_content_translated_successfully' => 'Content translated.',
         'success_translate_completed' => 'Translation completed!',
+        'success_connected' => 'Plugin successfully connected!',
         // prompt messages
         'prompt_proceed_with_upload' => 'Do you want to push your content [y/n]? ',
         'prompt_enter_first_name' => 'Enter you First Name: ',
