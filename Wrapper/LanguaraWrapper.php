@@ -29,11 +29,65 @@ class LanguaraWrapper extends \Languara\Library\Lib_Languara
         
     }
     
+    /**
+     * Loads the local config files and sets them in the appropriate fields
+     */
     protected function load_config_file()
     {
         \Config::load('languara', null, true, true);
             
         $this->language_location = APPPATH . \Config::get('language_location');
         $this->conf = \Config::get('conf');
+    }
+
+    /**
+     * Pushes the local translations to Languaras servers.
+     * 
+     * @return Response
+     */
+    public function push()
+    {
+        $external_request_id = \Input::post('external_request_id');
+        $client_signature = \Input::post('signature');
+        
+        $languara = new LanguaraWrapper();  
+
+        try
+        {
+            $languara->check_auth($external_request_id, $client_signature);
+            $languara->upload_local_translations();
+        }
+        catch (\Exception $e)
+        {
+            return \Response::forge($e->getMessage(), 400);
+        }
+        
+        return \Response::forge(1);
+    }
+
+    /**
+     * Pulls the translations for the current project from 
+     * Languaras servers
+     * 
+     * @return Response
+     */
+    public function pull()
+    {
+        $external_request_id = \Input::post('external_request_id');
+        $client_signature = \Input::post('signature');
+              
+        $languara = new LanguaraWrapper();  
+        
+        try
+        {
+            $languara->check_auth($external_request_id, $client_signature);
+            $languara->download_and_process();
+        }
+        catch (\Exception $e)
+        {
+            return \Response::forge($e->getMessage(), 400);
+        }
+        
+        return \Response::forge(1);
     }
 }

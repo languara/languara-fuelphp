@@ -119,14 +119,14 @@ class Languara
         $languara->print_message('success_translate_completed', 'SUCCESS');
     }
 
-    public static function connect($public_key = '')
+    public static function connect($private_key = '')
     {
         ini_set('memory_limit', '-1');
         $languara = new LanguaraWrapper();
         
-        if ($public_key === '')
+        if ($private_key === '')
         {
-            return $languara->print_message('error_invalid_public_key', 'FAILURE');
+            return $languara->print_message('error_invalid_private_key', 'FAILURE');
         }
         
         // this is a hack, because FuelPHP buffers all response before printing
@@ -137,7 +137,7 @@ class Languara
         
         try
         {
-            $languara->connect($public_key);          
+            $languara->connect($private_key);          
         } 
         catch (\Exception $ex) 
         {

@@ -42,7 +42,7 @@ return array(
         'error_no_local_content' => 'ERROR: Looks like you don\'t have any language resources defined in ',
         'error_add_more_languages' => 'ERROR: You need to add or upload more then your primary language in Languara before you can translate, or the uploaded languages to the server are not supported by the current translation method!',
         'error_invalid_translation_method' => 'ERROR: Invalid tranlsation method!',
-        'error_invalid_public_key' => 'You need to enter a public key for you project in order to procceed!',
+        'error_invalid_private_key' => 'You need to enter a private key for you project in order to procceed!',
         // notice messages
         'notice_retrieve_data' => 'Scanning project for locales and translations.',
         'notice_resource_cd_help_link' => 'See http://docs.languara.com for resource code format requirements!',
@@ -69,7 +69,7 @@ return array(
         'notice_pull_command_info' => 'This command is used for downloading content from Languara',
         'notice_register_command_info' => 'Register for a new Languara account',
         'notice_translate_command_info' => 'Translate your content on Languara, you can choose either human or machine translation',
-        'notice_connect_command_info' => 'Connect your plugin with your project through the CLI by just providing the public key for you project.',
+        'notice_connect_command_info' => 'Connect your plugin with your project through the CLI by just providing the private key for you project.',
         'notice_starting_upload' => 'Pushing local language files to Languara',
         'notice_starting_download' => 'Pulling translations from Languara',
         'notice_register_command' => 'Create a new Languara account:  (Note: If you already have one, visit http://languara.com and setup an integration online)!',
