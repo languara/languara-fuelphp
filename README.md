@@ -7,7 +7,7 @@ Add languara plugin information to your composer.json file:
 
 <pre><code>
 php composer.phar require languara/fuelphp
-</pre></code>
+</code></pre>
 
 or 
 
@@ -34,11 +34,19 @@ Add the package to the autoload array in fuel/app/config/config.php:
       'languara'
     )
 )
-</pre></code>
+</code></pre>
 
 <h3>Configure the Package</h3>
+Optionally if you want to use the GUI pull and push from the GUI on http://languara.com add these 2 routes to your fuel/app/config/routes.php:
 
-.....
+<pre><code>
+'languara/push' => function(){
+	return (new \Languara\Wrapper\LanguaraWrapper())->push();
+},
+'languara/pull' => function(){
+	return (new \Languara\Wrapper\LanguaraWrapper())->pull();
+},
+</code></pre>
 
 <h3>Usage</h3>
 
@@ -69,6 +77,12 @@ $ php oil r languara:push
 </code></pre>
 
 to upload your content from your app to Languara.
+
+<pre><code>
+$ php oil r languara:connect
+</code></pre>
+
+to connect your plugin with a project on languara.com
 
 
 <pre><code>
