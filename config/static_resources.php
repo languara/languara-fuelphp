@@ -21,7 +21,7 @@ return array(
         'project_config' => '/config/languara.php',
         'static_resources' => '/config/static_resources.php',
     ),
-    "origin_site" => "https://languara.dev/",
+    "origin_site" => "https://languara.com/",
     "platform" => "FuelPHP",
     "messages" => array(
         // error messages
