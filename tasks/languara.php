@@ -137,7 +137,7 @@ class Languara
         
         try
         {
-            $languara->connect($private_key);          
+            $languara->connect($private_key, $languara->platform);          
         } 
         catch (\Exception $ex) 
         {
